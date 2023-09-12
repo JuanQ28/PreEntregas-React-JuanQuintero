@@ -1,0 +1,25 @@
+.card_container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_container svg{
+  width: 50px;
+}
+
+.card_container_count{
+  position: absolute;
+  color: #f8f9fa;
+}
+
+.card_container_count span{
+  font-weight: bold;
+}
+
+.nav-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
