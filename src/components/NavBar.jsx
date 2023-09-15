@@ -1,5 +1,5 @@
 import Brand from "./Brand";
-import CardContainer from "./CardContainer";
+import CardWidget from "./CardWidget";
 import HamButton from "./HamButton-navbar";
 import NavLink from "./NavLink-navbar";
 
@@ -29,7 +29,7 @@ const NavBar = () => {
                         <NavLink content="Nosotros"/>
                     </li>
                     <li className="nav-item">
-                        <CardContainer count={3}/>
+                        <CardWidget count={3}/>
                     </li>
                     </ul>
                 </div>

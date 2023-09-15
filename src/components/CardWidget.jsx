@@ -1,7 +1,7 @@
 import CardCount from "./CardCount";
 import CardIcon from "./CardIcon";
 
-const CardContainer = ({color = "currentColor", count = 0}) => {
+const CardWidget = ({color = "currentColor", count = 0}) => {
     return (
         <div className="card_container">
             <CardIcon color={color}/>
@@ -10,4 +10,4 @@ const CardContainer = ({color = "currentColor", count = 0}) => {
     );
 };
 
-export default CardContainer;
+export default CardWidget;
