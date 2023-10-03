@@ -1,6 +1,10 @@
+import { NavLink } from "react-router-dom";
+
 const Brand = () => {
     return (
-        <a className="navbar-brand" href="#">ArmyBody</a>
+        <NavLink className="navbar-brand" to="/">
+            ArmyBody
+        </NavLink>
     );
 };
 

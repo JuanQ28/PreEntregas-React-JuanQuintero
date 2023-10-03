@@ -1,7 +1,8 @@
 import Brand from "./Brand";
 import CardWidget from "./CardWidget";
 import HamButton from "./HamButton-navbar";
-import NavLink from "./NavLink-navbar";
+import { NavLink } from "react-router-dom";
+import { navBarRoutes } from "../routes/routes";
 
 const NavBar = () => {
     return (
@@ -16,18 +17,13 @@ const NavBar = () => {
                 </div>
                 <div className="offcanvas-body">
                     <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li className="nav-item">
-                        <NavLink content="Productos" isActive={true} />
-                    </li>
-                    <li className="nav-item">
-                        <NavLink content="Sucursales"/>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink content="Noticias"/>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink content="Nosotros"/>
-                    </li>
+                    {navBarRoutes.map((route) => (
+                        <li key={route.path} className="nav-item">
+                            <NavLink to={route.path} className="nav-link">
+                                {route.name}
+                            </NavLink>
+                        </li>
+                    ))}
                     <li className="nav-item">
                         <CardWidget count={3}/>
                     </li>
