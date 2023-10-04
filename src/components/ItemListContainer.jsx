@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 import useProducts from "../customhooks/useProducts";
 import useFilter from "../customhooks/useFilter";
 import { useEffect} from "react";
+import ProductCard from "./ProductCard";
 
 
 const ItemListContainer = () => {
@@ -25,13 +25,7 @@ const ItemListContainer = () => {
         <div className="container cardContainer">
             {
                 filteredProducts.map((product) =>(
-                    <div key={product.id} className="card">
-                        <img src={product.img} className="card-img-top" alt={product.name}/>
-                        <div className="card-body">
-                            <h5 className="card-title">{product.name}</h5>
-                            <NavLink to={`/product/${product.id}`} className="btn btn-primary">Details</NavLink>
-                        </div>
-                    </div>
+                    <ProductCard key={product.id} productIn={product}/>
                 ))
             }
         </div>
