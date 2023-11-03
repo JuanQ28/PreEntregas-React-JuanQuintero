@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 import CartProvider from './context/cart.provider.jsx';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBi6UXDQ7qeOUgZ6RBk4vNk4X8G2UxwdX8",
-    authDomain: "e-commerce-armybody.firebaseapp.com",
-    projectId: "e-commerce-armybody",
-    storageBucket: "e-commerce-armybody.appspot.com",
-    messagingSenderId: "519880085918",
-    appId: "1:519880085918:web:34823c0d4094ce75a4c68f"
+    apiKey: import.meta.env.VITE_FIREBASE_APIKEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTHDOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECTID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGEBUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGINGSENDERID,
+    appId: import.meta.env.VITE_FIREBASE_APPID
 };
 
 initializeApp(firebaseConfig);
