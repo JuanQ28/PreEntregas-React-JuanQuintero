@@ -18,3 +18,7 @@ npm run dev
 ## Estilos
 
 La gran mayoría de estilos del proyecto fueron implementados gracias a la biblioteca multiplataforma Bootstrap.
+
+## Railway
+
+Para el despligue y apreciación del proyecto se implementó la plataforma Railway, con el siguiente [link](https://armybody-reactjs-juanquintero-production-43bd.up.railway.app/) para acceder a la página.
