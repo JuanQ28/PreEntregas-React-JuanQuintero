@@ -3,10 +3,10 @@ import useProducts from "../customhooks/useProducts";
 import ItemDetail from "../customhooks/itemDetail";
 
 
-
 const ItemDetailContainer = () => {
     const {productId} = useParams()
     const {products, loading} = useProducts()
+    
 
     if(loading){
         return <h1>Cargando...</h1>

@@ -8,16 +8,19 @@ import ProductCard from "./ProductCard";
 const ItemListContainer = () => {
     const {categoryName} = useParams()
     const {products, loading} = useProducts()
-    const {setFilter, filterComplete} = useFilter()    
-
+    const {filter, setFilter, filterComplete} = useFilter()    
     useEffect(() => {
-        if(categoryName){
+        if(categoryName || filter){
             setFilter(categoryName)
         }
-    }, [categoryName])
+    }, [categoryName, setFilter, filter])
 
     if(loading){
-        return <h1>Cargando...</h1>
+        return (
+            <div className="loaderContainer">
+                <span className="loader"></span>
+            </div>
+        )
     }
     
     const filteredProducts = filterComplete(products) 

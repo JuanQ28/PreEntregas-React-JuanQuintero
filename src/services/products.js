@@ -131,7 +131,7 @@ const products = [
         category: "multivitaminicos",
         price: 35000,
         stock: 4,
-        img: "https://cdn.shopify.com/s/files/1/0479/3873/2191/products/vitaliah-cell-vitaliah-productos-para-adelgazar-colombia-alimentos-saludables-colombia-14807173333065_800x.jpg?v=1623334490",
+        img: "https://cdnx.jumpseller.com/mis-vitaminas/image/20027958/resize/610/610?1634604203",
         description: "description"
     },
     {

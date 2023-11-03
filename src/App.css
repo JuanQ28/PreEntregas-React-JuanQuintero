@@ -1,3 +1,32 @@
+.loaderContainer{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #000000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  text-align: center;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
 .card_container{
   position: relative;
   display: flex;
@@ -97,4 +126,45 @@
 .cardDetail .card-footer{
   width: 100%;
   padding: 10px;
+}
+
+/* Estilos implementados en el cart */
+
+.cartContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cartContainer_card{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartContainer_card_img{
+  width: 20%;
+}
+
+.cartContainer_card_img img{
+  width: 100%;
+}
+
+.cartContainer_card_name{
+  width: 20%;
+}
+
+.cartContainer_card_price{
+  width: 20%;
+}
+
+.cartContainer_card_quantity{
+  width: 20%;
+}
+
+.cartContainer_card_trash{
+  width: 20%;
 }

@@ -3,8 +3,11 @@ import CardWidget from "./CardWidget";
 import HamButton from "./HamButton-navbar";
 import { NavLink } from "react-router-dom";
 import { navBarRoutes } from "../routes/routes";
+import { useContext } from "react";
+import CartContext from "../context/cart.context.jsx";
 
 const NavBar = () => {
+    const cartContext = useContext(CartContext)
     return (
         <nav className="navbar bg-body-tertiary navbar-expand-md">
             <div className="container-fluid">
@@ -25,7 +28,9 @@ const NavBar = () => {
                         </li>
                     ))}
                     <li className="nav-item">
-                        <CardWidget count={3}/>
+                        <NavLink to={"/cart"}>
+                        <CardWidget count={cartContext.cart.products.length}/>
+                        </NavLink>
                     </li>
                     </ul>
                 </div>

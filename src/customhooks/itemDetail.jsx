@@ -1,9 +1,11 @@
 import { NavLink } from "react-router-dom"
 import useCounter from "./useCounter"
+import { useContext } from "react"
+import CartContext from "../context/cart.context"
 
 const ItemDetail = ({product}) => {
     const {quantity, Increment, Decrement} = useCounter()
-    
+    const cartContext = useContext(CartContext)
     return (
         <div className="card text-center cardDetail">
                 <div className="card-header">
@@ -24,7 +26,9 @@ const ItemDetail = ({product}) => {
                     </button>
                     </div>
                     <p className="card-text">Stock disponible: {product.stock}</p>
-                    <a href="#" className="btn btn-primary">Agregar al carrito</a>
+                    <button type="button" className="btn btn-secondary btn-lg" onClick={() => cartContext.addProduct(product, quantity)} disabled={quantity == 0}>
+                        Agregar al carrito
+                    </button>
                 </div>
                 <div className="card-footer text-body-secondary">
                     <NavLink to={`/`} className="btn btn-primary">Volver</NavLink>

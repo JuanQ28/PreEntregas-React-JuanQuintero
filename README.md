@@ -1,8 +1,20 @@
-# React + Vite
+# Proyecto Final REACT JS 47210
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido, este proyecto tomó como inspiración la implementación de una tienda de distintos suplementos deportivos de gran variedad de marcas.
 
-Currently, two official plugins are available:
+## Ejecución
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para la realización del proyecto se implementó la tecnología REACT JS, en cojunto con VITE, para generar una experiencia de desarrollo más ágil y rápida
+
+Para continuar, se procede con la instalación de los módulos y dependencias de node.
+```bash
+npm install
+```
+Ya luego para ejecutar el proyecto, implementamos este comando para levantarllo en modo desarrollo.
+```bash
+npm run dev
+```
+
+## Estilos
+
+La gran mayoría de estilos del proyecto fueron implementados gracias a la biblioteca multiplataforma Bootstrap.
